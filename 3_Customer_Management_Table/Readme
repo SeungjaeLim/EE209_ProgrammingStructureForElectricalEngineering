@@ -1,0 +1,14 @@
+Seungjae Lim, Assignment 3
+-
+Array
+pros - easy to implement, less memory using than hash table
+cons - slow for insert, search
+Hash table
+pros - faster for insert, search
+cons - table use memory, so need more memory. implement complex
+I implemented customer_manager2.c hashtable expansion with call void Table_Expansion(DB_T d) 
+when When the number of nodes (user items) in a hash table reaches 75% of the number of buckets, 
+expand the hash table to double the number of buckets.
+Table_Expansion allocate temporary new DB, and hash again because # of buckets was changed, then
+register in new DB, and unregister data in DB, and lastly give new DB's data to DB to expand hash table
+9 hours
