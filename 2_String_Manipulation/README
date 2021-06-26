@@ -1,0 +1,12 @@
+Seungjae Lim, Assignment 2
+-
+It is impossible to know allocated size of destination only have information of pointer, 
+so we can't call assert to avoid size of destination is smaller than source.
+(I think if destination is allocated malloc, 
+then when StrCopy call realloc size of source to avoid it, not assert)
+I implemented part 1 only with pointer notation.
+  - I use const char *pc instead of const char c[] 
+  - I use pc++ to use pointer instead of index i
+  - I accessed to *p intead of c[i]
+  - I checked end of String such that if(*p), because *p is '\0' when end of string 
+9 hours
